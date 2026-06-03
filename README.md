@@ -1,6 +1,12 @@
-# Lumière — Curated Image Gallery
+# ✦ Lumière — Premium Curated Image Gallery ✦
 
-A modern, responsive, and immersive web-based image gallery crafted using semantic **HTML5**, modern **CSS3**, and interactive **ES6+ JavaScript**. It features a premium dark aesthetic, dynamic category filtering, scroll-reveal animations, and a fully-featured lightbox overlay with keyboard navigation, responsive touch swiping, and metadata/thumbnail strips.
+Lumière is a modern, responsive, and immersive web-based image gallery featuring a premium dark aesthetic, glassmorphic UI elements, dynamic category filtering, scroll-reveal animations, and an advanced interactive lightbox viewer.
+
+---
+
+## 🔗 Live Link
+Access the live deployment of the Lumière Gallery here:
+> 🚀 **Live Demo:** **https://cerulean-cascaron-543772.netlify.app/**
 
 ---
 
@@ -26,7 +32,7 @@ An immersive overlay modal utilizing backdrop filters, keyboard navigation, touc
 
 ## ✨ Features
 
-- **Premium Dark Theme:** Harmonies of custom dark blue surfaces, vibrant gold/amber highlights, and subtle radial gradient backdrops.
+- **Premium Dark Aesthetic:** Harmonies of custom dark blue surfaces, vibrant gold/amber highlights, and subtle radial gradient backdrops.
 - **Glassmorphic UI Elements:** Lightbox controls, info labels, and thumbnail strips styled with backdrop filters (`blur(10px)`) and semi-transparent borders.
 - **Responsive Layout:** Adaptive styling optimized for all viewport sizes (desktop, tablet, and mobile), adjusting columns from 4 to 1 dynamically.
 - **Dynamic Category Filtering:** Instantly filters images across 4 categories (Landscape, Nature, Urban, Wildlife) with smooth transition effects.
