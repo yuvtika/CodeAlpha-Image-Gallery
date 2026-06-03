@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A stunning, responsive image gallery with lightbox navigation, category filters, and smooth animations. Browse beautiful photography across nature, urban, wildlife, and more.">
+    <title>Lumière — Image Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / HERO ===== -->
+    <header id="hero">
+        <div class="hero-backdrop"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">✦ Curated Collection</p>
+            <h1 class="hero-title">Lumière</h1>
+            <p class="hero-subtitle">A gallery of moments frozen in light</p>
+            <a href="#gallery" class="hero-cta" id="explore-btn">
+                <span>Explore Gallery</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN GALLERY ===== -->
+    <main>
+        <section id="gallery" class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">The Collection</h2>
+                <p class="section-desc">Explore photography across categories — from sweeping landscapes to intimate wildlife moments.</p>
+            </div>
+
+            <!-- Category Filter Bar -->
+            <nav class="filter-bar" id="filter-bar" aria-label="Gallery category filters">
+                <button class="filter-btn active" data-category="all" id="filter-all">
+                    <span class="filter-icon">◈</span> All
+                </button>
+                <button class="filter-btn" data-category="landscape" id="filter-landscape">
+                    <span class="filter-icon">⛰</span> Landscape
+                </button>
+                <button class="filter-btn" data-category="nature" id="filter-nature">
+                    <span class="filter-icon">🌿</span> Nature
+                </button>
+                <button class="filter-btn" data-category="urban" id="filter-urban">
+                    <span class="filter-icon">🏙</span> Urban
+                </button>
+                <button class="filter-btn" data-category="wildlife" id="filter-wildlife">
+                    <span class="filter-icon">🦁</span> Wildlife
+                </button>
+            </nav>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Images injected by JS -->
+            </div>
+
+            <!-- Image counter -->
+            <div class="gallery-counter" id="gallery-counter"></div>
+        </section>
+    </main>
+
+    <!-- ===== LIGHTBOX OVERLAY ===== -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox viewer">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+
+        <!-- Close -->
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <!-- Prev / Next -->
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <!-- Image container -->
+        <div class="lightbox-content" id="lightbox-content">
+            <img class="lightbox-image" id="lightbox-image" src="" alt="">
+            <div class="lightbox-info" id="lightbox-info">
+                <span class="lightbox-title" id="lightbox-title"></span>
+                <span class="lightbox-category" id="lightbox-category"></span>
+                <span class="lightbox-position" id="lightbox-position"></span>
+            </div>
+        </div>
+
+        <!-- Thumbnail strip -->
+        <div class="lightbox-thumbnails" id="lightbox-thumbnails"></div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Lumière Gallery. Crafted with light &amp; code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
